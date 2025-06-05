@@ -12,12 +12,12 @@ func _ready() -> void:
 	player_fire_timer.timeout.connect(_on_fire_timer_timeout)
 	
 func _physics_process(delta: float) -> void:
-	var direction:int = Input.get_axis("left","right")
+	var direction:float = Input.get_axis("left","right")
 	position.x += spd * direction * delta
 	
 	if Input.is_action_just_pressed("Shoot") and fire == false :
 		fire = true
-		var beam_instance = beam_scene.instantiate()
+		var beam_instance:Beam = beam_scene.instantiate()
 		beam_instance.type = beam_instance.Owner.PLAYER
 		beam_instance.global_position = global_position
 		root.get_node("beam").add_child(beam_instance)

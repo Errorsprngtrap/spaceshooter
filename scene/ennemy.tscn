@@ -23,5 +23,7 @@ shape = SubResource("CircleShape2D_8dqw5")
 position = Vector2(0, 24)
 
 [node name="Ennemy_fire_timer" type="Timer" parent="."]
+autostart = true
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Ennemy_fire_timer" to="." method="_on_ennemy_fire_timer_timeout"]

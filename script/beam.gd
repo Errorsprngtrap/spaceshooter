@@ -1,7 +1,7 @@
 class_name Beam
 extends Area2D
 
-const SPD:float = 300.0
+const SPD:float = 600.0
 var direction:int = 0
 enum Owner {
 	PLAYER,
