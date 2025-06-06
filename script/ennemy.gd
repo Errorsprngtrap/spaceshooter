@@ -64,7 +64,7 @@ func shoot():
 	beam_instance.type = beam_instance.Owner.ENEMY
 	beam_instance.global_position = global_position
 	root.get_node("beam").add_child(beam_instance)
-	ennemy_fire_timer.start()
+	#ennemy_fire_timer.start()
 		
 func _on_ennemy_fire_timer_timeout() -> void:
 	shoot()
