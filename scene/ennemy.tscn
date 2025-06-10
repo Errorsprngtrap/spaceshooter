@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://ds41eqoyl05s8"]
 
 [ext_resource type="Script" uid="uid://0ablqnkfyc41" path="res://script/ennemy.gd" id="1_f3frg"]
-[ext_resource type="PackedScene" uid="uid://cfmfxjh05sn2u" path="res://scene/beam.tscn" id="2_c481b"]
+[ext_resource type="PackedScene" uid="uid://cfmfxjh05sn2u" path="res://scene/oldbeam.tscn" id="2_c481b"]
 [ext_resource type="Texture2D" uid="uid://b1p05w2bdukly" path="res://sprite/ennemy.png" id="3_oe3sl"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8dqw5"]

@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5o0xxxf2rn57"]
+
+[ext_resource type="Script" uid="uid://bgx5su0xqe37n" path="res://script/oldplayer.gd" id="1_8v1d5"]
+[ext_resource type="PackedScene" uid="uid://cfmfxjh05sn2u" path="res://scene/oldbeam.tscn" id="2_vmg1k"]
+[ext_resource type="Texture2D" uid="uid://k8tfmk6kco1i" path="res://sprite/Player.png" id="3_u5hh1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_onrkg"]
+radius = 28.6356
+
+[node name="Player" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_8v1d5")
+beam_scene = ExtResource("2_vmg1k")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("3_u5hh1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_onrkg")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(0, -24)
+
+[node name="PlayerFireTimer" type="Timer" parent="."]

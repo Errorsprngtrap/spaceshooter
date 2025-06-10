@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cfmfxjh05sn2u"]
 
-[ext_resource type="Script" uid="uid://d1bydrxj2evwj" path="res://script/beam.gd" id="1_uy604"]
+[ext_resource type="Script" uid="uid://d1bydrxj2evwj" path="res://script/oldbeam.gd" id="1_uy604"]
 [ext_resource type="Texture2D" uid="uid://kcevenh3ihhn" path="res://sprite/beam.png" id="2_uy604"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r7gvb"]
