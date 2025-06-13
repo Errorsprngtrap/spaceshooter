@@ -1,15 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://bcoodutisbm87"]
+[gd_scene load_steps=2 format=3 uid="uid://bcoodutisbm87"]
 
-[ext_resource type="PackedScene" uid="uid://bexd0qy2pnqjn" path="res://beam.tscn" id="1_m4s22"]
 [ext_resource type="PackedScene" uid="uid://b5sg6kcwb6ofa" path="res://scene/player.tscn" id="2_txjdh"]
 
 [node name="testzone" type="Node2D"]
 
-[node name="beam" parent="." instance=ExtResource("1_m4s22")]
-position = Vector2(322, 571)
-
-[node name="Player" parent="." instance=ExtResource("2_txjdh")]
-position = Vector2(313, 962)
-
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(324, 512)
+
+[node name="Player" parent="." instance=ExtResource("2_txjdh")]
+position = Vector2(332, 919)
